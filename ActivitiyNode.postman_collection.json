@@ -45,14 +45,14 @@
 					"raw": "{\r\n    \"name\": \"Fulano\",\r\n    \"type\": \"tipo 5\",\r\n    \"age\": 67\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/author",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"author"
 					]
 				}
 			},
@@ -71,14 +71,14 @@
 					"raw": "{\r\n    \"name\": \"Fulano\",\r\n    \"type\": \"tipo 5\",\r\n    \"age\": 67\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/book",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"book"
 					]
 				}
 			},
@@ -97,14 +97,14 @@
 					"raw": "{\r\n    \"name\": \"Fulano\",\r\n    \"type\": \"tipo 5\",\r\n    \"age\": 67\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/bookinstance",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"bookinstance"
 					]
 				}
 			},
@@ -117,7 +117,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"romance\",\r\n    \"url\": \"romance_genre.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -145,7 +145,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com\"\r\n}",
+					"raw": "{\r\n  \"first_name\": \"John\",\r\n  \"family_name\": \"Doe\",\r\n  \"date_of_birth\": \"1980-01-01\",\r\n  \"date_of_death\": \"2050-12-31\",\r\n  \"name\": \"John Doe\",\r\n  \"lifespan\": \"1980-01-01 to 2050-12-31\",\r\n  \"url\": \"https://example.com/johndoe\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -153,14 +153,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/author",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"author"
 					]
 				}
 			},
@@ -173,7 +173,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com\"\r\n}",
+					"raw": "{\r\n  \"title\": \"Book Title\",\r\n  \"author\": \"6486098faa57732fdc1f641e\",\r\n  \"summary\": \"Book summary goes here\",\r\n  \"isbn\": \"1234567890\",\r\n  \"genre\": [\"6486081faa57732fdc1f641c\", \"64860dbf3322d562f86a3977\"],\r\n  \"url\": \"https://example.com/book\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -181,14 +181,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/book",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"book"
 					]
 				}
 			},
@@ -201,7 +201,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com\"\r\n}",
+					"raw": "{\r\n  \"book\": \"648610a2a3f8d97798665d9d\",\r\n  \"imprint\": \"Book imprint\",\r\n  \"date_of_birth\": \"2022-01-01\",\r\n  \"due_back\": \"2022-02-01\",\r\n  \"url\": \"https://example.com/bookinstance\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -209,14 +209,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/genre",
+					"raw": "http://localhost:4000/bookinstance",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre"
+						"bookinstance"
 					]
 				}
 			},
@@ -229,13 +229,120 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com.br\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Adventure\",\r\n    \"url\": \"adventure_genre.com.br\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
+				"url": {
+					"raw": "http://localhost:4000/genre/6486103ea3f8d97798665d99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"genre",
+						"6486103ea3f8d97798665d99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"John\",\r\n  \"family_name\": \"Doe Relme\",\r\n  \"date_of_birth\": \"1980-01-01\",\r\n  \"date_of_death\": \"2050-12-31\",\r\n  \"name\": \"John Doe Relme\",\r\n  \"lifespan\": \"1980-01-01 to 2050-12-31\",\r\n  \"url\": \"https://example.com/johndoe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/author/6486090caa57732fdc1f641d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"author",
+						"6486090caa57732fdc1f641d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Book Title\",\r\n  \"author\": \"6486098faa57732fdc1f641e\",\r\n  \"summary\": \"Book summary goes here\",\r\n  \"isbn\": \"1234567890\",\r\n  \"genre\": [\"6486081faa57732fdc1f641c\", \"64860e41a421374b4c71ba33\"],\r\n  \"url\": \"https://example.com/book\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/book/64860e85a421374b4c71ba34",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"book",
+						"64860e85a421374b4c71ba34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BookInstance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"book\": \"648610a2a3f8d97798665d9d\",\r\n  \"imprint\": \"Book imprint v.2\",\r\n  \"date_of_birth\": \"2022-01-01\",\r\n  \"due_back\": \"2022-02-01\",\r\n  \"url\": \"https://example.com/bookinstance\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/bookinstance/648610baa3f8d97798665d9e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"bookinstance",
+						"648610baa3f8d97798665d9e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Genre",
+			"request": {
+				"method": "DELETE",
+				"header": [],
 				"url": {
 					"raw": "http://localhost:4000/genre/6486080baa57732fdc1f641b",
 					"protocol": "http",
@@ -254,125 +361,18 @@
 		{
 			"name": "Author",
 			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com.br\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000/genre/6486080baa57732fdc1f641b",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"genre",
-						"6486080baa57732fdc1f641b"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Book",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com.br\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000/genre/6486080baa57732fdc1f641b",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"genre",
-						"6486080baa57732fdc1f641b"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "BookInstance",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Horror\",\r\n    \"url\": \"horror_genre.com.br\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000/genre/6486080baa57732fdc1f641b",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"genre",
-						"6486080baa57732fdc1f641b"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Genre",
-			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/genre/64860783aa57732fdc1f641a",
+					"raw": "http://localhost:4000/author/6486090caa57732fdc1f641d",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre",
-						"64860783aa57732fdc1f641a"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Author",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4000/genre/64860783aa57732fdc1f641a",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"genre",
-						"64860783aa57732fdc1f641a"
+						"author",
+						"6486090caa57732fdc1f641d"
 					]
 				}
 			},
@@ -384,15 +384,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/genre/64860783aa57732fdc1f641a",
+					"raw": "http://localhost:4000/book/64860e25a421374b4c71ba32",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"genre",
-						"64860783aa57732fdc1f641a"
+						"book",
+						"64860e25a421374b4c71ba32"
 					]
 				}
 			},
@@ -404,15 +404,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/BookInstance/64860783aa57732fdc1f641a",
+					"raw": "http://localhost:4000/bookinstance/648610baa3f8d97798665d9e",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"BookInstance",
-						"64860783aa57732fdc1f641a"
+						"bookinstance",
+						"648610baa3f8d97798665d9e"
 					]
 				}
 			},
