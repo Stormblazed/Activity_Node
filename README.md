@@ -5,7 +5,7 @@ Segue dentro do projeto um arquivo "ActivitiyNode.postman_collection.json" conte
 
 Comando para a inicialização do projeto: 
 
-- "npm install"
+- "npm install --force"
 - "npm start"
 
 ## ---------------- ##
