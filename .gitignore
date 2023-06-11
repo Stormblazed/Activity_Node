@@ -5,7 +5,7 @@ logs
 # Dependency directories
 node_modules/
 pnpm-lock.yaml
-package-lock.json
+#package-lock.json
 yarn.lock
 
 # Optional npm cache directory
