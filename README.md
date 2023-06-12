@@ -1,5 +1,5 @@
 # Activity_Node
-Trabalho Realizado por Wallace Bessa, Lucas José, Hiago Andrade, Tales Henrique, Guilherme Tristão.
+Trabalho Realizado por Wallace Bessa, Lucas José, Hiago Andrade, Tales Henrique, Guilherme Tristão, Davi Lucas.
 
 Segue dentro do projeto um arquivo "ActivitiyNode.postman_collection.json" contendo os teste realizados no postman.
 
